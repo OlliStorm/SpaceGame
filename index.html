@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map">
+        <div id="canvasContainer">
+            <canvas id="canvas" width="1000" height="1000"></canvas>
+        </div>
+        <div id="star_system_controls">
+            <button type="button" onclick="setSelectedStarAsTarget();">Navigation starten</button>
+            <button type="button" onclick="backToGalaxyView();">Zurück zur Galaxiekarte</button>
+        </div>
+    </div>
+    <div id="time_controls">
+        <p id="date"></p>
+        <button type="button" onclick="pause();">Stop</button>
+        <button type="button" onclick="play();">Weiter</button>
+    </div>
+    <script src="ships.js"></script>
+    <script src="galaxy.js"></script>
+</body>
+</html>

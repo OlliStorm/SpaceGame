@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+}
+
+#canvas {
+    display: block;
+}
+
+#map {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: black;
+    overflow: hidden;
+}
+
+#canvasContainer {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+#star_system_controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#time_controls {
+    position: fixed;
+}
